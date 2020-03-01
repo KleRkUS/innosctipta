@@ -14,9 +14,9 @@ export default class Cart extends React.Component {
 
     this.state = {
       cart: this.createCart(),
-      priceEu: '',
-      priceDollar: '',
-      priceRu: this.setPrice(),
+      priceEu: this.setPrice(74),
+      priceDollar: this.setPrice(66),
+      priceRu: this.setPrice(1),
       billing: {
         Adress: null,
         Name: null,
@@ -56,7 +56,7 @@ export default class Cart extends React.Component {
   *
   * @return null
   **/
-  setPrice() {
+  setPrice(divider) {
     const order = this.cookies.get('Order', false),
           data = Object.entries(order);
 
@@ -66,10 +66,7 @@ export default class Cart extends React.Component {
       price += +card[1].price;
     }
 
-    this.state.priceDollar = Math.round(price/66);
-    this.state.priceEu = Math.round(price/74);
-
-    return price;
+    return Math.round(price/divider);
   }
 
   /**
