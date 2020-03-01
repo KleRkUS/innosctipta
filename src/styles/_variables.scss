@@ -1,0 +1,24 @@
+$contrast-color: #39CCCC;
+$dark-color: #1A1A1D;
+$elems-background-color: #EEEEEE;
+$elems-background-color-hover: #ededed;
+
+// MIXINS
+
+@mixin default-shadow {
+  -webkit-box-shadow: 0px 0px 3px rgba(71, 71, 91, .3);
+          box-shadow: 0px 0px 3px rgba(71, 71, 91, .3);
+}
+
+@mixin onMouseUp-shadow {
+  -webkit-box-shadow: 0px 0px 5px rgba(71, 71, 91, .4);
+          box-shadow: 0px 0px 5px rgba(71, 71, 91, .4);
+}
+
+@mixin transitionAll {
+  -webkit-transition: all ease-in-out .2s;
+     -moz-transition: all ease-in-out .2s;
+      -ms-transition: all ease-in-out .2s;
+       -o-transition: all ease-in-out .2s;
+          transition: all ease-in-out .2s;
+}
