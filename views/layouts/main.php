@@ -38,7 +38,7 @@ AppAsset::register($this);
           <h1>My lovely <b>Pizza</b> delivery</h1>
         </div>
         <div class="layout__nav">
-            <?php if ($_SESSION['auth_token'] != null): ?>
+            <?php if (isset($_SESSION['auth_token']) && $_SESSION['auth_token'] != null): ?>
                 <a class="button__default button__important" href="/site/history">History</a>
                 <a class="button__default" href="/login/logout">Log out</a>
             <?php else: ?>  
