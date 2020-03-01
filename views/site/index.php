@@ -5,8 +5,6 @@
 $this->title = 'My Lovely Pizza Delivery || Saint-Petersburg';
 ?>
 
-<?= $logged ?>
-
 <div class="site-index" id="root">
 
 </div>
