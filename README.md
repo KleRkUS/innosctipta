@@ -1,12 +1,12 @@
 ### Test task made for Innoscripta by Villevald Vladislav
 
-Frontend: React.js
-Backend: Yii2
-Database: MySQL
-Module bundler: Webpack 4
+Frontend: React.js  
+Backend: Yii2  
+Database: MySQL  
+Module bundler: Webpack 4  
 
-Uploaded on Heroku
-Free database hosted on remotemysql.com
+Uploaded on Heroku  
+Free database hosted on remotemysql.com  
 
 DIRECTORY STRUCTURE
 -------------------
@@ -41,20 +41,20 @@ Production:
 SERVER SETTINGS
 ---------------
 
-HTTP: Apache_2.4
-PHP: PHP_7.3
-MySQL: MySQL-8.0x64
+HTTP: Apache_2.4  
+PHP: PHP_7.3  
+MySQL: MySQL-8.0x64  
 
 
 QUICK START
 -----------
-Route: http://domain/First/Second
-Controller: controllers/FirsController.php
-Action: actionSecond
-View: views/First/*name*.php
+Route: http://domain/First/Second  
+Controller: controllers/FirsController.php  
+Action: actionSecond  
+View: views/First/*name*.php  
 
 React is mounted in each view separately, exclude 
-views that is too simple to use it
+views that is too simple to use it  
 
 Axios send requests to Api actions, which is highlighted
 in comments with @Api Action
@@ -68,7 +68,7 @@ EXCUSES
 -------
 
 User authorization is made in the easiest way, without hashing password
-and access levels, using only session variable
+and access levels, using only session variable.  
 Sorry, that was the easiest and fastest way, so I decided to do that, cause 
-login is just a minor feature in this task 
+login is just a minor feature in this task.  
 This is the way..
